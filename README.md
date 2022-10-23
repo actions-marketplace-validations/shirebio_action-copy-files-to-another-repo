@@ -5,7 +5,7 @@ This GitHub Action copies glob matched files from the current repository to a lo
 The action takes care to create the directory, if not yet present.
 
 # Example Workflow
-    name: Push File
+    name: Push Files
 
     on: push
 

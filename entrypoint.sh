@@ -38,8 +38,8 @@ echo "Copying contents to git repo"
 rm -rf "$CLONE_DIR/$INPUT_DESTINATION_FOLDER/"
 mkdir -p "$CLONE_DIR/$INPUT_DESTINATION_FOLDER/"
 ls -R ./
-for f in "$INPUT_GLOB"; do
-  cp -a "$f" "$CLONE_DIR/$INPUT_DESTINATION_FOLDER/"
+for f in $INPUT_GLOB; do
+  cp -a $f "$CLONE_DIR/$INPUT_DESTINATION_FOLDER/"
 done
 cd "$CLONE_DIR"
 

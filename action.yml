@@ -1,5 +1,5 @@
-name: 'Push a directory to another repository'
-description: 'Used for pushing a copy of a folder to another repository'
+name: 'Push multiple globbed files to another repository'
+description: 'Used for pushing multiple globbed files to another repository'
 inputs:
   glob:
     description: 'Glob for pushing multiple files from source repo'

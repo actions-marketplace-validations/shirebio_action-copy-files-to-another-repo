@@ -16,16 +16,16 @@ The action takes care to create the directory, if not yet present.
         - name: Checkout
           uses: actions/checkout@v2
 
-        - name: Pushes test folder
-          uses: datalbry/copy_folder_to_another_repo_action@1.0.0
+        - name: Pushes multiple files
+          uses: shire/action-copy-files-to-another-repo@0.0.1
           env:
             API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
           with:
             glob: 'my_files/*.yaml'
-            destination_repo: 'dmnemec/release-test'
+            destination_repo: 'shirebio/release-test'
             destination_folder: 'test-dir'
-            user_email: 'devin.nemec@gmail.com'
-            user_name: 'dmnemec'
+            user_email: 'kevin@shirebio.com'
+            user_name: 'kallen'
             commit_msg: '[GHA] Update the test files.'
 
 # Variables

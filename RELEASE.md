@@ -1,5 +1,4 @@
-v0.0.1
+v0.0.2
 
 - CHANGES
-  - Switched to using glob instead of dir
-  - bumpversion
+  - `ls -R` added for debug of Dockerfile in GHA execution

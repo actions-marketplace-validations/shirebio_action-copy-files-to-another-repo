@@ -1,6 +1,6 @@
 v0.0.1
 
-# Copy globed files to another Repository
+# Copy multiple globed files to another Repository
 This GitHub Action copies glob matched files from the current repository to a location in another repository.
 The action takes care to create the directory, if not yet present.
 

@@ -21,7 +21,7 @@ The action takes care to create the directory, if not yet present.
           env:
             API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
           with:
-            source_folder: 'test_files'
+            glob: 'my_files/*.yaml'
             destination_repo: 'dmnemec/release-test'
             destination_folder: 'test-dir'
             user_email: 'devin.nemec@gmail.com'
@@ -29,7 +29,7 @@ The action takes care to create the directory, if not yet present.
             commit_msg: '[GHA] Update the test files.'
 
 # Variables
-* **source_folder:** The folder to be moved.
+* **glob:** The glob string to specify which files are copied from the source repo
 * **destination_repo:** The repository to place the folder in.
 * **destination_folder:** [optional] The folder in the destination repository to place the file in, if not the root directory.
 * **user_email:** The GitHub user email associated with the API token secret.

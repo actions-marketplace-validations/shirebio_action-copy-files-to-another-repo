@@ -17,7 +17,7 @@ The action takes care to create the directory, if not yet present.
           uses: actions/checkout@v2
 
         - name: Pushes multiple files
-          uses: shire/action-copy-files-to-another-repo@0.0.1
+          uses: shirebio/action-copy-files-to-another-repo@0.0.1
           env:
             API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
           with:
